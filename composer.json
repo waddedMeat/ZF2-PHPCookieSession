@@ -1,0 +1,21 @@
+{
+    "name": "locosoftworks/client-session",
+    "description": "client side session store",
+    "require-dev": {
+        "phpunit/phpunit": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Moran",
+            "email": "moranjk75@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {"Loco\\": "module/src/"}
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "zendframework/zendframework": "2.3.1"
+    }
+}
