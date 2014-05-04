@@ -1,6 +1,24 @@
 
 # Cookie Session Handler #
 
+### Requires ###
+
+ * PHP >= 5.3
+ * [PHPCookieSession](https://github.com/moranjk/PHPCookieSession)
+
+### Composer Install ###
+
+Add the following to `composer.json` and execute `composer update`
+
+```
+"minimum-stability": "dev",
+"require": {
+    "locosoftworks/zf2-cookie-session": "dev-master"
+}
+```
+
+### Usage ###
+
 To use the session handler in ZF2, you will need to ensure the session is written before any output is returned.  This can be achieved by adding a listenter to the `SendResponseEvent::EVENT_SEND_RESPONSE` event, or use the provided SessionManager.  This can be done in your `application.config.php`
 
 ```
